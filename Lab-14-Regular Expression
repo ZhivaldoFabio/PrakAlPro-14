@@ -1,0 +1,30 @@
+# Zhivaldo Fabio H.
+# 71200608
+
+# Soal ::
+'''
+Tian akan diberikan soal untuk menemukan sebuah kata didalam kalimat.
+Tian mencoba membuat program dimana kata itu dapat ditemukan
+hanya deengan menuliskan Kalimat dan kata nya saja.
+Tian pun meminta tolong kamu untuk membantunya.
+Bantulah Tian untuk membuat program itu agar dapat cuan.
+'''
+# Input     =   input kan kalimat yang ingin di input (gimanatuh),
+#               Lalu Inputkan Kata yang ingin di cari.
+# Process   =   Regex akan mencari dan menemukan kata itu dalam kalimat dengan mudah.
+# Output    =   Output akan berhasilkan berapa kata yang ada dalam 1 kalimat.
+
+# PENTING!
+import re
+
+# Process :
+def ctrlf (wrd, stc):
+    z = re.findall(wrd, stc)
+    print ('Jumlah kata', wrd,'pada kalimat, adalah :',len(z))
+
+stc = input("Masukkan Kalimat :\n>> ")
+wrd = input("Temukan Kata :\n>> ")
+
+ctrlf(wrd, stc)
+
+# Code made by Zhivaldo Fabio H.
